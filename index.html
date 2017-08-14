@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>I Love Design</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="img/favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+	$('a[href^="#"]').click(function(){
+	var target = $(this).attr('href');
+	$('html, body').animate({scrollTop: $(target).offset().top}, 600);
+	return false; 
+	}); 
+	});
+	</script>
+
+</head>
+<body>
+
+	<!-- header -->
+
+	<header class="header">
+		<div class="header__content">
+
+			<div class="logo">
+				<img class="logo-img" src="img/logo.png">
+			</div>
+			<div class="header__text">
+				<h1 class="header__title">I love design</h1>
+				<p class="header__desc">I'm glad that you visited my site where he can get to know me and my work.</p>
+				
+			</div>
+
+			<div class="header__button-wrap">
+				<a class="header__button" href="#section__about-me"></a>
+			</div>
+			
+		</div>
+
+	</header><!-- ./header -->
+
+	<main class="main">
+
+		<div class="container">
+
+			<!-- about me -->
+			<div class="about-me" id="section__about-me">
+
+				<p class="about-me__text">My name is Vlad Musienko, I'm a web designer. I love to draw and all that is connected with the design. In this area a long time ago and during this time I managed to create several successful projects used by people all over the world. </p>
+
+				<p class="about-me__text">I love the simplicity in the design of web sites. As I see it,people, it's like my work. Naturally do not want to rest on our laurels and will continue further studies to improve soybean skills, creating new interesting creative projects.</p>
+
+			</div><!-- ./about me -->
+
+			<!-- features -->
+			<section class="features-wrap">
+
+				<h2 class="features__title">What i do</h2>
+				<div class="features">
+					<ul class="features__list">
+
+						<li class="features__item">
+							<h3 class="features__item-title">Template.</h3>
+							<p class="features__item-desc">Lately, I often create templates for WordPress. The portfolio is the presentation and the opportunity to buy them on the site Themeforest.</p>
+						</li>
+
+						<li class="features__item">
+							<h3 class="features__item-title">Brand.</h3>
+							<p class="features__item-desc">Creating a brand is a very complex process aimed at the creation and positioning the unique persons of the company, its products and services.</p>
+						</li>
+
+						<li class="features__item">
+							<h3 class="features__item-title">Dreams.</h3>
+							<p class="features__item-desc">Everyone is able to destroy the dream, but not everyone is able to create it. I try to help people in its definition as a person and specialist.</p>
+						</li>
+					</ul>
+				</div>
+			</section><!-- features -->
+		</div>
+	</main>
+	<footer class="footer">
+
+	</footer>
+</body>
+</html>
